@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto ;
+    perspective: 100px;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    height: 120%;
+    width: 100%;
+    z-index: -5;
+}
+/* .background{
+    /* transform: translateZ(-40px) scale(); */
+*/
+.foreground{
+    transform: translateZ(-10px)scale(1.1);
+}
+.foreground , .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+h2{
+   position: absolute;
+   top: 12px;
+   right:10px;
+   color: white;
+   font-size: 40px;
+   font-weight: 300px;
+   letter-spacing: 4px;
+   /* text-shadow: 0 0 10px rgb(0, 0, 0); */
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section{
+    background-color: rgb(153, 169, 143);
+    color: black;
+    padding: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.desc{
+
+    color: black;
+    font-weight: 10;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 3rem;
+    padding: 0.5rem 2.5rem;
+}
+#uyt{
+    left: 50%;
+}
+.sthead{
+    font-size: 3rem;
+    padding: 0.5rem 2.5rem;
+}
+.text{
+    font-size:1.5rem ;
+    padding:0.5rem 2.5rem;
+    margin: 3rem 0;
+
+}
+.bg1{
+    background-image: url(p2.jpg);
+}
+.bg2{
+    background-image: url(pi6.jpg);
+}
+.bg3{
+    background-image: url(pi5.jpg);
+}
+.abc{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px;
+    margin-right: 40px;
+    font-size: 40px;
+    gap: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50px;
+}
+ a:hover{
+    color:rgb(97, 129, 71);
+}
